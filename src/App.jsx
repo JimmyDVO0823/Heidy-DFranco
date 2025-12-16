@@ -1,25 +1,11 @@
-import TaskList from "./TaskList";
-import TaskForm from "./TaskForm";
-import { tasks as data } from "./Tasks";
-import { useEffect, useState } from "react";
+import SideBar from './Components/SideBar'
+import sideBarMenu from './Components/SideBarMenu';
 function App() {
-  const [tasks, setTasks] = useState([]);
-  useEffect(() => {
-    setTasks(data);
-  }, []);
-
-  function handleAddTask(taskTitle) {
-    setTasks([...tasks, {
-      id: tasks.length + 1,
-      title: taskTitle,
-      description: "Descripción por defecto"
-    }]);
-  }
+  
 
   return (
     <>
-      <TaskList tasks={tasks} />
-      <TaskForm handleAddTask = {handleAddTask}/>
+      <SideBar elements={sideBarMenu} />
     </>
   );
 }

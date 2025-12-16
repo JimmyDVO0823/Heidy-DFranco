@@ -1,4 +1,16 @@
 @import "tailwindcss";
 body {
-  background-color: #ECE8E7;
+  background-color: var(--color-lightTheme-bg);
+}
+
+/* Importas la fuente que te guste de Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+/* Registras la fuente como una variable de Tailwind */
+@theme {
+  --font-playfair: "Playfair Display", serif;
+  --font-logo: "Orbitron", sans-serif;
+  --color-brand-gray: #2e2e3a;
+  --color-navbar-bg: #fae3d9;
+  --color-lightTheme-bg: #fae3d9;
 }

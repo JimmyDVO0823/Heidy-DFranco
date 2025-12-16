@@ -1,4 +1,4 @@
-import styles from '../Styles/';function SideBar({ elements }) {
+function SideBar({ elements }) {
   return (
     <nav className="sidebar">
       <ul>

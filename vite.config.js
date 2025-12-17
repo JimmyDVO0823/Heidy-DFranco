@@ -12,4 +12,5 @@ export default defineConfig({
     }),
     tailwindcss(), // 2. Lo añades aquí
   ],
+  base: '/Heidy-DFranco/'
 })

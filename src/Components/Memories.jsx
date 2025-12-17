@@ -10,8 +10,22 @@ export default function Memories({ elements }) {
             key={index}
             className="flex flex-col items-center text-center border rounded-4xl p-4 shadow-md 
             hover:scale-105 hover:shadow-lg transition-transform duration-300
-            aspect-[2/1]"
+            aspect-[5/5]
+            bg-white
+            border-6"
           >
+            <img
+              src={element.image}
+              alt={element.title}
+              absolute
+              inset-0
+              w-full
+              h-full
+              object-cover
+              group-hover:scale-110
+              transition-transform
+              duration-300
+            />
             <h1>{element.title}</h1>
             <p>{element.description}</p>
           </div>

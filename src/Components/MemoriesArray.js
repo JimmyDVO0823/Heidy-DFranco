@@ -1,29 +1,34 @@
 const memories = [
-    {
-        id: 1,
-        title: "Primer día",
-        description: "Nuestro primer día juntos"
-    },
-    {
-        id: 2,
-        title: "Segundo día",
-        description: "Nuestra segunda vez juntos"
-    },
-    {
-        id: 3,
-        title: "Tercer día",
-        description: "Nuestra tercera vez juntos"
-    },
-    {
-        id: 4,
-        title: "Cuarto día",
-        description: "Nuestra cuarta vez juntos"
-    },
-    {
-        id: 5,
-        title: "Quinto día",
-        description: "Nuestra quinta vez juntos"
-    }
-]
+  {
+    id: 1,
+    title: "Primer día",
+    description: "Nuestro primer día juntos",
+    image: "src/assets/fofo.jpeg",
+  },
+  {
+    id: 2,
+    title: "Segundo día",
+    description: "Nuestra segunda vez juntos",
+    image: "src/assets/foto1.jpeg",
+  },
+  {
+    id: 3,
+    title: "Tercer día",
+    description: "Nuestra tercera vez juntos",
+    image: "src/assets/foto2.jpeg",
+  },
+  {
+    id: 4,
+    title: "Cuarto día",
+    description: "Nuestra cuarta vez juntos",
+    image: "src/assets/foto3.jpeg",
+  },
+  {
+    id: 5,
+    title: "Quinto día",
+    description: "Nuestra quinta vez juntos",
+    image: "src/assets/foto4.jpeg",
+  },
+];
 
 export default memories;

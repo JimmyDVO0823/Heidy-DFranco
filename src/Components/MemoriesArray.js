@@ -29,6 +29,12 @@ const memories = [
     description: "Nuestra quinta vez juntos",
     image: "src/assets/foto4.jpeg",
   },
+  {
+    id: 6,
+    title: "Sexto día",
+    description: "Cambio para probar",
+    image: "src/assets/foto5.jpeg",
+  }
 ];
 
 export default memories;

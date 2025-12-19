@@ -3,6 +3,7 @@ import sideBarMenu from './Components/SideBarMenu';
 import Memories from './Components/Memories'
 import memories from './Components/MemoriesArray'
 import { Toaster } from 'sonner';
+import MusicPlayer from './Components/MusicPlayer'
 function App() {
   
 
@@ -11,6 +12,7 @@ function App() {
       <Toaster position="bottom-right" richColors />
       <SideBar elements={sideBarMenu} />
       <Memories elements={memories} />
+      <MusicPlayer />
     </div>
   );
 }

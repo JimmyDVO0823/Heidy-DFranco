@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-
+import MemoryGrid from './MemoryGrid'
 /**
  * COMPONENTE: Memories
  * ------------------------------------------------------------------
@@ -186,44 +186,7 @@ export default function Memories({ initialElements = [] }) {
       </label>
 
       {/* Grid responsivo que contiene todas las tarjetas de recuerdos */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-7xl">
-        {memories.map((element) => (
-          <div
-            key={element.id}
-            className="group relative flex flex-col items-center justify-center text-center 
-            border-4 border-[#D2D5D9] rounded-[3rem] shadow-md 
-            hover:scale-105 hover:shadow-2xl transition-all duration-500
-            aspect-square overflow-hidden bg-zinc-100"
-          >
-            {/* Imagen principal del recuerdo */}
-            <img
-              src={element.image}
-              alt={element.title || "Recuerdo"}
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              loading="lazy"
-            />
-
-            {/* Botón para eliminar el recuerdo */}
-            <div className="absolute top-3 right-3 z-10">
-              <button
-                onClick={() => handleDelete(element.id)}
-                className="bg-white/80 px-3 py-1 rounded-full text-sm hover:bg-white shadow"
-                aria-label={`Eliminar recuerdo ${element.title}`}
-              >
-                Eliminar
-              </button>
-            </div>
-
-            {/* Overlay que aparece al hacer hover */}
-            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center p-6 text-white">
-              <h1 className="text-2xl font-bold font-playfair">
-                {element.title}
-              </h1>
-              <p className="text-sm mt-2 opacity-90">{element.description}</p>
-            </div>
-          </div>
-        ))}
-      </div>
+      <MemoryGrid memories={memories} handleDelete={handleDelete} />
     </div>
   );
 }

@@ -6,7 +6,6 @@ export default function MusicPlayer() {
   const playerRef = useRef(null);
 
   const videoId = "gndkFhYh5Mo";
-  //https://youtu.be/bX4Hml7aUvU?si=PHpHQpfVYin1jGj7
 
   const opts = {
     height: "1", // 0 puede dar problemas; usar 1 px para que exista
@@ -55,7 +54,7 @@ export default function MusicPlayer() {
   };
 
   return (
-    <div className="fixed bottom-8 left-8 z-[100]">
+    <div className="fixed bottom-8 left-8 z-100">
       {/* El iframe NO usa display:none; lo colocamos fuera de la ventana y con 1px */}
       <div
         // usamos CSS para que esté en DOM pero invisible/inelegible

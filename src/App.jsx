@@ -4,6 +4,7 @@ import Memories from './Components/Memories'
 import memories from './Components/MemoriesArray'
 import { Toaster } from 'sonner';
 import MusicPlayer from './Components/MusicPlayer'
+import LoveCounter from './Components/LoveCounter'
 function App() {
   
 
@@ -13,6 +14,7 @@ function App() {
       <SideBar elements={sideBarMenu} />
       <Memories elements={memories} />
       <MusicPlayer />
+      <LoveCounter />
     </div>
   );
 }
